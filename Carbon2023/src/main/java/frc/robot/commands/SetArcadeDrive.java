@@ -32,7 +32,7 @@ public class SetArcadeDrive extends CommandBase {
   @Override
   public void execute() {
     joystickY = MathUtil.applyDeadband(m_throttle.getAsDouble(), 0.05);
-    joystickX = MathUtil.applyDeadband(m_throttle.getAsDouble(), 0.05);
+    joystickX = MathUtil.applyDeadband(m_turn.getAsDouble(), 0.05);
     
     throttle = joystickY;
     turn = -0.60 * joystickX;
