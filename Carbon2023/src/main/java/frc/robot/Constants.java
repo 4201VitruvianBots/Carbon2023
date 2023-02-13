@@ -23,10 +23,18 @@ public final class Constants {
     public static final int xBoxController = 2;
   }
 
-  public static final class DriveTrain {
-    public static final int leftFrontDriveMotor = 20;
-    public static final int leftRearDriveMotor = 21;
-    public static final int rightFrontDriveMotor = 22;
-    public static final int rightRearDriverMotor = 23;
+  public static final class DriveTrainConstants {
+      public static final int pigeonID = 9; 
+      public static final int FrontLeftDriveMotor = 21; 
+      public static final int FrontRightDriveMotor = 22; 
+      public static final int BackLeftDriveMotor = 23; 
+      public static final int BackRightDriveMotor = 24; 
+      
+      public enum DriveTrainNeutralMode {
+        BRAKE,
+        COAST,
+        /** Master motors brake, follower motors coast */
+        HALF_BRAKE
+      }
   }
 }
